@@ -36,8 +36,7 @@ const updateANote = asyncHandler(async(req, res) => {
         note.title = title;
         note.text = text;
         note.completed = completed;
-        const updatedNote = await note.save();
-        res.json(updatedNote);
+        res.json({json: 'Note has been updated'});
     } else {
         res.json({message: 'The note can not be found and updated'})
     }
