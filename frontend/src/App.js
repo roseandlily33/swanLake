@@ -1,12 +1,27 @@
 import './App.css';
+import {Routes, Route} from 'react-router-dom';
+import Layout from './Components/Layout';
+import Public from './Components/Public';
+import Login from './Components/Login';
+import Dash from './Components/Dash';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1>Hi</h1>
-      </header>
-    </div>
+    <>
+    <Routes>
+      <Route path="/" element={<Layout />}>
+        <Route index element={<Public />} />
+        <Route path="login" element={<Login />} />
+        
+        <Route path="dash" element={<Dash />}>
+
+
+        </Route>
+
+      </Route>
+    </Routes>
+    
+    </>
   );
 }
 
