@@ -2,7 +2,7 @@ import {createApi, fetchBaseQuery} from '@reduxjs/toolkit/query/react';
 
 //fetchBaseQuery is like an axios
 export const apiSlice = createApi({
-    baseQuery: fetchBaseQuery({baseUrl: 'http://localhost: 3000'}),
+    baseQuery: fetchBaseQuery({baseUrl: 'http://localhost:3000'}),
     tagTypes: ['Note', 'User'],
     endpoints: builder => ({})
 })
