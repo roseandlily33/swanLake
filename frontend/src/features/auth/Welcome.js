@@ -4,12 +4,17 @@ const Welcome = () => {
     const date = new Date();
     const today = new Intl.DateTimeFormat('en-US', {dateStyle: 'full', timeStyle: 'long'}).format(date);
     return ( 
-        <div>
-            <h4>{today}</h4>
-            <Link to='/dash/notes'>View Notes</Link>
-            <Link to='/dash/users'>View User Settings</Link>
-
-        </div>
+        <section>
+        <h4>{today}</h4>
+          <div className="welcomeButtonDiv">
+          <Link to='/dash/notes'>
+            <button>View Notes</button>
+            </Link>
+            <Link to='/dash/users'>
+               <button> View User Settings</button>
+                </Link>
+          </div>
+        </section>
      );
 }
  

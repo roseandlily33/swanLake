@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;900&family=Tinos:wght@400;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ :root{
+    --headerFont: 'Tinos', serif;
+    --mainFont: 'Playfair Display', serif;
+    --white: #FFE;
+    --lightBlue: #cedadc;
+    --teal: #4a8088;
+    --darkTeal: #253239;
+    --black: #001;
+    --borderRadius: 10px;
+    --border: 3px solid var(var(--darkTeal));
+ }
+body{
+    background-color: var(--lightBlue);
+}
+button{
+    background-color: var(--teal);
+    border-radius: var(--borderRadius);
+    border: var(--border);
+    padding: 1.2em;
+    color: var(--white);
+   
+}
+button:hover{
+    background-color: var(--darkTeal);
+    border-radius: 25px;
+    border: none;
+}
+h1, h2{
+    font-weight: 700;
+    font-family: var(--headerFont);
+    font-size: 2.2em;
+}
+h1{
+    text-decoration: underline;
+    color: var(--darkTeal);
+    font-size: 2.8em;
+    margin-bottom: 0.7em;
+}
+h3, h4, h5, h6{
+    font-weight: 400;
+    font-family: var(--mainFont);
+    font-size: 1.6em;
+}
+h5, h6{
+    font-size: 1.2em;
+}
+/* Layout */
+.layout{
+    padding: 0.5em;
+}
+
+/* Public */
+
+
+address{
+ margin-bottom: 1em;
+}
+
+/* Login */
+
+
+/* Dashboard */
+/* Dashboard Header */
+header{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Dashboard Main */
+.dashboard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2em;
+    min-height: 80vh;
+}
+.welcomeButtonDiv{
+    padding-top: 1em;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* Dashboard Footer */
+footer{
+    border-top: 3px solid var(--darkTeal);  
+}
+footer h5{
+    margin-bottom: 0.6em;
+}
+

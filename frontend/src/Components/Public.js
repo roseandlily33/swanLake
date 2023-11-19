@@ -1,19 +1,18 @@
 import {Link} from 'react-router-dom';
+import wavyImage from '../images/wavyImage.jpg';
 
 const Public = () => {
 
     return ( 
-        <div>
-            <header>Welcome</header>
-            <h2>Contact Page</h2>
-            <address>
-                Name <br />
+        <main>
+            <h1>Davie's Tech Shop</h1>
+           <address>
+                Davie Davidson <br />
                 490 Blakley Drive <br />
                 Marquis MI 92041 <br />
             </address>
-            <h4><Link to='login'>Employee Login</Link></h4>
-
-        </div>
+            <Link to='login'><button>Employee Login</button></Link>
+        </main>
      );
 }
  

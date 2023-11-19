@@ -8,7 +8,7 @@ const Dash = () => {
        <>
        <DashHeader />
         <div className="dashboard">
-            <h1>Dash layout</h1>
+            <h1>Dashboard</h1>
             <Outlet />
         </div>
         <DashFooter />

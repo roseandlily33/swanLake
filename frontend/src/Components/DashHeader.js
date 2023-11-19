@@ -1,14 +1,14 @@
 import { Link } from "react-router-dom";
 const DashHeader = () => {
     return ( 
-        <div className="dashheader">
+        <header>
             <Link to="/dash/notes">
-                <h2>Notes</h2>
+               <button>Notes</button>
             </Link>
             <nav>
-                <buttons>Later</buttons>
+                <button>More Buttons Later</button>
             </nav>
-        </div>
+        </header>
      );
 }
  
