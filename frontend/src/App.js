@@ -12,6 +12,7 @@ import EditNote from './features/notes/EditNote';
 import EditUser from './features/users/EditUser';
 import NewUserForm from './features/users/NewUserForm';
 import NewNote from './features/notes/NewNote';
+import Prefetch from './features/auth/Prefetch';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path="login" element={<Login />} />
         
        {/* These are protected routes */}
+       <Route element={<Prefetch />}>
         <Route path="dash" element={<Dash />}>
           
           <Route index element={<Welcome />}/>
@@ -38,6 +40,7 @@ function App() {
             <Route path="new" element={<NewUserForm/>}
 />          </Route>
 
+        </Route>
         </Route>
         
         </Route>
